@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes appear {
+    0% {
+        
+        opacity: 0.2;
+    }
+    25% {
+        
+        opacity: 0.5;
+    }
+    50% {
+        
+        opacity: 0.8;
+    }
+    75% {
+        
+        opacity: 1;
+    }
+    100% {
+        
+        opacity: 1;
+    }
+}
+
+body {
+    animation: appear 5s ease-in-out 1;
+}
+
+:root{
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+    --bright-blue:  hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+    --ffm-raleway: "Raleway", sans-serif;
+    --ffm-opensans: "Open Sans", sans-serif;
+
+}
+p{
+    font-family: var(--ffm-opensans);
+}
+h2{
+    font-family: var(--ffm-raleway);
+}
+h3{
+    font-family: var(--ffm-raleway);
+}
+
+.nav-item{
+    font-family: var(--ffm-raleway);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+input{
+    width: 80%;
+    padding: 0.7rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-family: var(--ffm-raleway);
+}
+
+/* HERO SECTION */
+.hero h1{
+    font-family: var(--ffm-raleway);
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+.content > button{
+    display: inline-block;
+    width: 80%;  
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bright-blue);
+    font-size: 1.1rem;
+    font-family: var(--ffm-raleway);
+    font-weight: 600;
+    
+}
+.content > p{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* FEATURES SECTION */
+.features{
+    background-color: var(--light-grayish-blue);
+    text-align: center;
+}
+.features-content > a {
+    text-decoration: none;
+    color: var(--moderate-cyan);
+    border-bottom: 1px solid var(--moderate-cyan);
+}
+.features-content > h2{
+    font-size: 1rem;
+}
+.bg-curve{
+    width: 100%;
+}
+.testimonial{
+    background-color: white;
+    margin: auto;
+    width: 70%;
+}
+.testimonial > p{
+    font-size: 0.8rem;
+}
+.testimonial div{
+    display: inline-block;
+    position: relative;
+    top: 15px;
+    left: 10px;
+}
+.testimonial div p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+.testimonial div h3{
+    margin: 0;
+}
+
+/* SIGNUP SECTION */
+.sign-up{
+    background-color: var(--desaturated-blue);
+    color: white;
+}
+.sign-up-action > button{
+    display: inline-block;
+    width: 80%;  
+    padding: 0.7rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--bright-blue);
+    font-size: 1.1rem;
+    font-family: var(--ffm-raleway);
+    font-weight: 600;
+}
+
+/* FOOTER SECTION */
+.details{
+    background-color: var(--very-dark-blue);
+    color: white;
+}
+.details-link a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: 0.8s;
+}
+.details-link a:hover{
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+.social > i{
+    transition: 0.8s;
+}
+.social > i:hover{
+    color: var(--desaturated-blue);
+    cursor: pointer;
+}
+
+@media (min-width:1024px){
+    /* HERO SECTION */
+    .hero > img{
+        width: 50%;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    input{
+        width: 50%;
+    }
+    .content > button{
+        width: 30%;
+    }
+    .content > p{
+        font-size: 1.2rem;
+    }
+    /* FEATURES SECTION */
+    .features >img{
+        width: 40%;
+        height: 400px;
+    }
+    .features-content > h2{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+    .testimonial{
+       width: 60%;
+    }
+    .testimonial > p{
+        font-size: 0.9rem;
+    }
+    .testimonial div{
+        display: inline-block;
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    .testimonial div p{
+        margin: 0;
+        font-size: 0.7rem;
+    }
+    .testimonial div h3{
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    /* SIGNUP SECTION */
+    .sign-up-content{
+        width: 50%;
+    }
+    .sign-up-action{
+        width: 50%;
+    }
+    .sign-up-action > input{
+        width: 80%;
+    }
+    .sign-up-action > button{
+        width: 50%;
+    }
+}
